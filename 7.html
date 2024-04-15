@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 사용자에게 가로와 세로 길이 입력 받기
+        var size = prompt("가로와 세로 길이를 입력하세요:");
+
+        // 입력값이 숫자인지 확인
+        if (isNaN(size)) {
+            document.write("유효한 숫자를 입력하세요.");
+        } else {
+            // 입력값을 숫자로 변환하여 가로와 세로 길이로 사용
+            size = parseInt(size);
+
+            // 정사각형 모양 출력
+            for (var i = 0; i < size; i++) {
+                for (var j = 0; j < size; j++) {
+                    document.write("* ");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</body>
+
+</html>

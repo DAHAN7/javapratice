@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 사용자에게 높이 입력 받기
+        var height = prompt("직각삼각형의 높이를 입력하세요:");
+
+        // 입력값이 숫자인지 확인
+        if (isNaN(height)) {
+            document.write("유효한 숫자를 입력하세요.");
+        } else {
+            // 입력값을 숫자로 변환하여 높이로 사용
+            height = parseInt(height);
+
+            // 직각삼각형 출력
+            for (var i = 1; i < height; i++) {
+                for (var j = 1; j <= i; j++) {
+                    document.write("* ");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</body>
+
+</html>

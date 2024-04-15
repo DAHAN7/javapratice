@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var targetNumber = Math.floor(Math.random() * 100) + 1;
+        var attemps = 0;
+        while(true){
+            var userInput = prompt("1~100까지의 정수를 입력해주세요.");
+            attemps++
+            if(isNaN(userInput)){
+                alert("유효한 숫자를 입력하세요.");
+                continue;
+            }
+            var userNumber = parseInt(userInput);
+            if( 1<userNumber || userNumber>100){
+                alert("1~100까지의 정수를 입력해주세요.")
+                continue;
+            }
+            if (userNumber === targetNumber){
+            alert("성공입니다" + attemps + "번만에 맞췄습니다");
+                break;
+        }else if(userNumber>targetNumber);
+        alert("높습니다");
+        else)
+
+
+        
+    </script>
+</head>
+<body>
+</body>
+</html>
